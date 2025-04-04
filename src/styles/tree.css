@@ -1,0 +1,52 @@
+@keyframes sway-left {
+    0% { transform: rotate(0deg); }
+    50% { transform: rotate(-3deg); }
+    100% { transform: rotate(0deg); }
+  }
+  
+  @keyframes sway-right {
+    0% { transform: rotate(0deg); }
+    50% { transform: rotate(3deg); }
+    100% { transform: rotate(0deg); }
+  }
+  
+  @keyframes subtle-sway {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-1px); }
+    100% { transform: translateY(0px); }
+  }
+
+  @keyframes arbustoBrisaIzquierda {
+    0% { transform: translateX(0); }
+    50% { transform: translateX(-3px); }
+    100% { transform: translateX(0); }
+  }
+  
+  @keyframes arbustoBrisaDerecha {
+    0% { transform: translateX(0); }
+    50% { transform: translateX(2px); }
+    100% { transform: translateX(0); }
+  }
+ 
+ 
+  .animate-tallo {
+    animation: subtle-sway 10s ease-in-out infinite;
+    transform-origin: bottom center;
+  }
+  
+  .animate-follaje-left {
+    animation: sway-left 6s ease-in-out infinite;
+    transform-origin: center;
+  }
+  .animate-follaje-right {
+    animation: sway-right 6s ease-in-out infinite;
+    transform-origin: center;
+  }
+ .animate-arbusto-left {
+  animation: arbustoBrisaIzquierda 6s ease-in-out infinite;
+}
+
+.animate-arbusto-right {
+  animation: arbustoBrisaDerecha 4s ease-in-out infinite;
+}
+ 
